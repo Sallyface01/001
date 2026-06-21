@@ -1,0 +1,8 @@
+workflows:
+  android-workflow:
+    name: Android APK Build
+    scripts:
+      - name: Build Debug APK
+        script: ./gradlew assembleDebug
+    artifacts:
+      - app/build/outputs/apk/debug/app-debug.apk
